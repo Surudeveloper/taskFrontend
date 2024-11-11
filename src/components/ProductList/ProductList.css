@@ -1,0 +1,113 @@
+/* Container Styles */
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.table-container{
+  margin: 30px;
+}
+/* Title */
+.container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Search Filter Styles */
+.search-filter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-filter input:focus,
+.search-filter select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Table Styles */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.product-table td {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-table td.actions-column {
+  width: 70px; /* Narrow column to fit two icons */
+  text-align: center;
+}
+
+/* Action Icons */
+.action-icons {
+  display: flex;
+  gap: 8px; /* Space between icons */
+  justify-content: center; /* Center align icons */
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.edit-icon:hover {
+  color: #28a745; /* Green for edit */
+}
+
+.delete-icon:hover {
+  color: #dc3545; /* Red for delete */
+}
+
+/* Button Hover Effects */
+.product-table td button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-table td button:hover {
+  background-color: #0056b3;
+}

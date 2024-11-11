@@ -1,0 +1,52 @@
+/* *************** for backend *******************************
+    go to backend folder (u can use command in terminal "cd backend")
+    open terminal and write command
+        npm i
+        npm run dev (to run the backend code)
+*/
+
+
+/* *************** for frontend *******************************
+    go to backend folder (u can use command in terminal "cd frontend")
+    go to frontend folder
+    open terminal and write command
+        npm i
+        npm run start (to run the frontend code)
+*/
+
+/* *************** Procedure *******************************
+    open browser
+    goto url: http://localhost:3000
+
+    u will redirected to landing page then click login button
+    then 
+
+    for normal user
+    email: s@g.com
+    password: 1234
+
+
+    for Admin user
+    email: sk@g.com
+    password: 1234
+
+    if u enter wrong details u will get message for wrong credentials
+    if it is correct
+
+    ############# user ########
+    u can see the dashboard page, 
+    product list 
+    and u can get 
+    logout button if u hover the "Account" at the top right corner
+
+
+    ############# Admin ########
+    u can see the dashboard page, 
+    product list 
+    ***(only Admin role can create update and delete the products)
+    *add product
+    *update product(pending)
+    *delete product (pending)
+    and u can get 
+    logout button if u hover the "Account" at the top right corner
+*/

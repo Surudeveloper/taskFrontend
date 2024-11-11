@@ -1,0 +1,58 @@
+.toaster {
+    position: fixed;
+    top: 220px;
+    right: 490px;
+    background-color: #ffc5ca;
+    color: #721c24;
+    padding: 15px 20px;
+    width: 300px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: left;
+    animation: fadeIn 0.3s ease, fadeOut 0.3s ease 2.7s;
+  }
+  
+  .toaster-content {
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+  }
+  
+  .toaster-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .toaster-message {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+  }
+  
+  .toaster-close-button {
+    background: transparent;
+    border: none;
+    color: #721c24;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    align-items: right;
+    margin: 0px;
+  }
+  
+  .toaster-close-button:hover {
+    color: #ff4d4f;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+  }
+  

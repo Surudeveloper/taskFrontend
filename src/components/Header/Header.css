@@ -1,0 +1,159 @@
+/* Basic styling for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  /* position: fixed; */
+  width: 97%;
+}
+
+.header-logo a {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Nav links styling */
+.nav-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Dropdown menu */
+.dropdown {
+  /* position: relative; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  color: #333;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown-content button {
+  background: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mobile styling */
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive behavior */
+/* @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #007bff;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+} */
+
+@media (max-width: 768px) { 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #007bff; /* Background color of the dropdown menu */
+    width: 100%;
+    text-align: center;
+    padding: 15px 0; /* Padding for the dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
+    border-top: 2px solid #0056b3; /* Optional border to separate it from the header */
+  }
+
+  /* Display the nav-links when the 'open' class is added */
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Hide the menu-toggle button on larger screens */
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem; /* Increase size for better tap targets */
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20%;
+  }
+
+  /* Style adjustments for navigation links in the dropdown */
+  .nav-links a {
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+  }
+
+  .nav-links a:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+}
